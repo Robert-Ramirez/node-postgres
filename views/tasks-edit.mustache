@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form to edit tasks</h1>
+    <form class ="" action="/tasks/edit/{{tsk.id}}" method="post">
+        <input type="text" name="name" value={{tsk.name}} placeholder="tasks name"/>
+        <input type="text" name="duration" value={{tsk.duration}} placeholder="duration"/>
+        <input type="text" name="description" value={{tsk.description}} placeholder="description"/>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

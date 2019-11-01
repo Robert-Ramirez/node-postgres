@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is the index page</h1>
+    <td>
+        <a href="/add/">add</a>
+    </td>
+    <table>
+        {{#rows}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{duration}}</td>
+            <td>{{description}}</td>
+            <td>
+            <form action="/tasks/delete/{{id}}" method="post">
+            <button type="submit">Delete</button>
+            </form>
+            </td>
+            <td>
+                <a href="/tasks/edit/{{id}}">edit</a>
+            </td>
+        </tr>
+        {{/rows}}
+    </table>
+</body>
+</html>
